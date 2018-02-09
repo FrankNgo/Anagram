@@ -24,12 +24,8 @@ namespace addressBook
 
         public void Configure(IApplicationBuilder app)
         {
+            app.UseDeveloperExceptionPage();
             app.UseStaticFiles();
-            app.Run(async (context) =>
-            {
-              
-            });
-
             app.UseMvc(routes =>
             {
                 routes.MapRoute(

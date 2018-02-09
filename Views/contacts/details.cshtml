@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Address Book</title>
+    <title>Contact Details</title>
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
     <link rel="stylesheet" type="text/css" href="~/css/styles.css" />
   </head>
   <body>
     <div class="container">
-      <h1>@Model.GetName()</h1>
-      <p>@Model.GetPhoneNumber()</p>
-      <p>@Model.GetAddress()</p>
-
-      <br><br><a href='/contacts/new'>Add another contact</a><br><br>
-      <a href='/'>View all contacts</a>
+      <center>
+      <h1>Contact Detials</h1>
+      <div class="info-fields">
+        <p>Name: @Model.GetName()</p>
+        <p>Phone Number: @Model.GetPhoneNumber()</p>
+        <p>Address: @Model.GetAddress()</p>
+        <br><br><a href='/contacts/new'>Add another contact</a><br><br>
+        <a href='/'>View all contacts</a>
+      </div>
+    </center>
     </div>
   </body>
 </html>

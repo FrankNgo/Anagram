@@ -1,15 +1,15 @@
-html, body {
+body {
   height: 100%;
   text-align: center;
-  color: white;
-  font-size: 24px;
-  background-color: gray;
+  color: black;
+  font-size: 15px;
+  background-color: #313638;
 }
 
 ul, li{
   list-style: none;
+  padding: 2px;
 }
-
 form {
   color: black;
 }
@@ -17,4 +17,37 @@ form {
 
 h3{
   text-align: center;
+}
+
+h1{
+  font-size: 50px;
+  background-color: #6CC5E9;
+  width: 50%;
+  height: 100px;
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 30px 30px 5px 5px;
+  font-weight: bold;
+  color: white;
+  border: 2px solid black;
+}
+
+p{
+  font-size: 20px;
+}
+
+.info-fields{
+  background-color: #ADC0C8;
+  width: 50%;
+  min-height: 300px;
+  height: auto;
+  margin-top: -10px;
+  border-radius: 5px 5px 30px 30px;
+  border: 2px solid black;
+  padding-bottom: 20px;
+}
+
+a{
+  color: #396B81;
+  font-size: 20px;
 }
