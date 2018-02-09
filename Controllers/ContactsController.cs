@@ -14,7 +14,7 @@ namespace addressBook.Models
     }
 
     [HttpGet("/contacts/new")]
-    public ActionResult CreateForm()
+    public ActionResult createForm()
     {
       return View();
     }
@@ -22,13 +22,13 @@ namespace addressBook.Models
     [HttpPost("/contacts")]
     public ActionResult Create()
     {
-      Contact newContact = new Contact(Request.From["new-name"], Request.From["new-phoneNumber"], Request.From["new-address"]);
+      Contact newContact = new Contact(Request.Form["new-name"], Request.Form["new-phoneNumber"], Request.Form["new-address"]);
       List<Contact> allContacts = Contact.GetAll();
-      return View("index",allContacts)
+      return View("index",allContacts);
     }
 
     [HttpGet("/contacts/{id}")]
-    public ActionResult Detail(int id)
+    public ActionResult Details(int id)
     {
       Contact contact = Contact.Find(id);
       return View(contact);
@@ -39,16 +39,7 @@ namespace addressBook.Models
     {
       Contact.ClearAll();
       List<Contact> allContacts = new List<Contact> {};
-      return View("index", allItems);
+      return View("index", allContacts);
     }
   }
-}
-
-
-
-
-
-
-  }
-
 }

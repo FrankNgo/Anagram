@@ -1,3 +1,7 @@
+using System.Collections.Generic;
+using System;
+
+
 namespace addressBook.Models
 {
   public class Contact
@@ -8,7 +12,7 @@ namespace addressBook.Models
     private int _id;
     private static List<Contact> _instances = new List<Contact> {};
 
-    public Item (string name, string phoneNumber, string address)
+    public Contact (string name, string phoneNumber, string address)
     {
       _name = name;
       _phoneNumber = phoneNumber;
@@ -59,9 +63,9 @@ namespace addressBook.Models
       _instances.Clear();
     }
 
-    public static Item Find (int searchId)
+    public static Contact Find (int searchId)
     {
-      return _instances[searchId-1]
+      return _instances[searchId-1];
     }
   }
 }
