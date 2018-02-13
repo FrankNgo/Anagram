@@ -1,7 +1,7 @@
 using System.IO;
 using Microsoft.AspNetCore.Hosting;
 
-namespace addressBook
+namespace Anagram
 {
     public class program
     {
