@@ -7,8 +7,10 @@ namespace Anagram.Models
   {
     public bool IsAnagram(string wordOne, string wordTwo)
     {
+      wordOne = wordOne.ToLower();
       for (int i = 0; i < wordOne.Length; i++)
       {
+        wordTwo = wordTwo.ToLower();
         if (!wordTwo.Contains(wordOne[i].ToString()))
         {
           return false;
