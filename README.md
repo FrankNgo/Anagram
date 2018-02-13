@@ -10,14 +10,18 @@ A program to test if a set of words are anagrams of another word.
 
   * Check that the user can enter in a word into the first field for the word to test.
   * Check that the user can enter in words into the test field for the words to test from.
-  ...Check if the user entered in case sensitive characters
-  ....Expected Input: 'dog'
-  ....Expected Output: True
-  ....Expected Input: 'dog'
-  ....Expected Output: True
+    * Check if the user entered in case sensitive characters
+      * Expected Input: 'dog'
+      * Expected Output: True
+      * Expected Input: 'Dog'
+      * Expected Output: True
+    * Check if the user entered in a alphanumeric character
+      * Expected Input: '3dog'
+      * Expected Output: True
+    * Check if the user entered in a special character
+      * Expected Input: '$dog'
+      * Expected Output: False
   * Check that the form proceeds and user can enter in information.
-  * Checl that the display displays correct
-  * The User can remove all contacts with the "clear all contacts" button.
 
 ### Installing
 
